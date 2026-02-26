@@ -20,6 +20,9 @@
         in
         {
           devshells.default = {
+            bash.extra = ''
+              export ROOT_DIR="$(pwd)"
+            '';
             commandGroups = {
               front-tools = [
                 pkgs.nodejs_22
@@ -27,16 +30,6 @@
               back-tools = [
                 pkgs.uv
               ];
-            };
-          };
-          devshells.instructors = {
-            bash.extra = ''
-              export ROOT_DIR="$(pwd)"
-            '';
-            packages = [
-              pkgs.nodejs_22
-            ];
-            commandGroups = {
               lint = [
                 {
                   name = "find-broken-links";
