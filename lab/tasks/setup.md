@@ -323,7 +323,7 @@ Complete these steps if you can't [connect to your VM](../../wiki/vm.md#connect-
 #### 1.14.2. (UPD) Set up `pgAdmin`
 
 > [!NOTE]
-> [`pgAdmin`](../../wiki/pgadmin.md#what-is-pgadmin) takes 2-3 minutes to start after you have [started the services](#110-upd-start-the-services).
+> [`pgAdmin`](../../wiki/pgadmin.md#what-is-pgadmin) takes 2-3 minutes to start after you have started the services.
 
 1. [Open `pgAdmin`](../../wiki/pgadmin.md#open-pgadmin).
 2. [Add a server in `pgAdmin`](../../wiki/pgadmin.md#add-a-server-in-pgadmin).
