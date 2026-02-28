@@ -13,7 +13,10 @@
   - [Clean up `Docker`](#clean-up-docker)
 - [Common `Docker` commands](#common-docker-commands)
   - [`docker run`](#docker-run)
+    - [`docker run` typical pattern](#docker-run-typical-pattern)
+    - [`docker run` useful flags](#docker-run-useful-flags)
   - [`docker ps`](#docker-ps)
+    - [`docker ps` useful variants](#docker-ps-useful-variants)
 - [`Docker Compose`](#docker-compose)
   - [Service](#service)
 - [Volumes](#volumes)
@@ -120,13 +123,13 @@ If you installed `Docker Desktop`:
 
 `docker run` starts a container from an image.
 
-Common pattern:
+#### `docker run` typical pattern
 
 ```terminal
 docker run --name <container-name> -p <host-port>:<container-port> <image-name>
 ```
 
-Useful flags:
+#### `docker run` useful flags
 
 - `-d` - run in background (detached mode).
 - `--rm` - remove container after it exits.
@@ -136,12 +139,7 @@ Useful flags:
 
 `docker ps` shows running containers.
 
-Useful variants:
-
-```terminal
-docker ps
-docker ps -a
-```
+#### `docker ps` useful variants
 
 - `docker ps` - only running containers.
 - `docker ps -a` - all containers (including stopped).
